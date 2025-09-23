@@ -34,13 +34,13 @@ export  default function Contact(){
                 <p>Computer Science & Engineering graduate (AKGEC, 2025) with full-stack expertise in Node.js, Go, MongoDB, PostgreSQL, and React, passionate about building scalable, user-centric applications and seeking software engineering opportunities.</p>
                 <div className="contact-details">
                     <div className="contact-detail">
-                        <img src="./src/assets/phone.svg" alt="phone" /><p>(+91)9919307232</p>    
+                        <img src="phone.svg" alt="phone" /><p>(+91)9919307232</p>    
                     </div>
                     <div className="contact-detail">
-                        <img src="./src/assets/email.svg" alt="email" /><p>shashwat9007@gmail.com</p>   
+                        <img src="email.svg" alt="email" /><p>shashwat9007@gmail.com</p>   
                     </div>
                     <div className="contact-detail">
-                       <img src="./src/assets/location.svg" alt="location" /><p>Block D ,Sector 44, Noida, Uttar Pradesh</p>   
+                       <img src="location.svg" alt="location" /><p>Block D ,Sector 44, Noida, Uttar Pradesh</p>   
                     </div>
                 </div>
             </div>
