@@ -1,0 +1,375 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  min-height: 100vh;
+  background: #161513;
+  color: #fff;
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;       /* menu in center */
+  padding: 15px 40px;
+  margin: 20px auto;
+  max-width: 900px;              /* keep it nicely contained */
+     /* rounded corners */
+  background: #161513;           /* contrast background */
+}
+
+/* Logo on the left */
+.navbar img {
+  margin-right: 100px;            /* pushes logo to left */
+  height: 40px;
+  cursor: pointer;
+}
+
+/* Nav menu */
+.nav-menu {
+  display: flex;
+  align-items:center ;
+  list-style: none;
+  gap: 40px;
+  font-size: 18px;
+}
+
+.nav-menu li {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+/* Nav links */
+.nav-menu a {
+  text-decoration: none;
+  color: #fff;              /* base color */
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.nav-menu a:hover {
+  color: #B415FF;
+}
+
+/* Active link */
+.nav-menu a.active {
+  color: #DF8908;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 10%
+}
+
+.contact-section {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px
+}
+
+.contact-left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex-basis: 40%
+}
+
+.contact-left h1 {
+    font-size: 50px;
+    font-weight: 700;
+    background: linear-gradient(270deg,#DF8908 80%,#B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent
+}
+
+.contact-left p {
+    max-width: 550px;
+    color: #d8d8d8;
+    font-size: 16px;
+    line-height: 25px
+}
+
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    color: #d8d8d8;
+    font-size: 22px
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    gap: 18px
+}
+
+.contact-detail img {
+    width: 25px
+}
+
+.contact-right {
+    flex-basis: 55%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px
+}
+
+.contact-right label {
+    color: #d8d8d8
+}
+
+.contact-right input,.contact-right textarea {
+    border: none;
+    width: 100%;
+    padding: 18px 0 18px 20px;
+    border-radius: 4px;
+    background: #32323c;
+    color: #a0a0a0;
+    font-family: Outfit;
+    font-size: 18px
+}
+
+.contact-submit {
+    border: none;
+    color: #fff;
+    border-radius: 50px;
+    background: linear-gradient(264deg,#DF8908 -5.09%,#B415FF 106.28%);
+    font-size: 18px;
+    padding: 18px 40px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: .3s
+}
+
+.contact-submit:hover {
+    transform: scale(1.1);
+    transition: .3s
+}
+
+@media (max-width: 768px) {
+    .contact {
+        gap:40px;
+        margin: 50px 6%;
+        align-items: start
+    }
+
+    .contact-section {
+        flex-direction: column
+    }
+
+    .contact-left h1 {
+        font-size: 35px
+    }
+
+    .contact-detail {
+        gap: 12px
+    }
+
+    .contact-detail img {
+        width: 20px
+    }
+
+    .contact-left {
+        margin-bottom: 30px
+    }
+
+    .contact-right label {
+        font-size: 14px
+    }
+}
+
+
+.main-img{
+  margin-top : 20px;
+  width: 320px;      /* set width */
+  height: 320px;     /* set height (same as width for perfect circle) */
+  /* makes it round */
+  object-fit: cover;  
+}
+
+
+
+.hero{
+  display: flex;
+  align-items :center;
+  flex-direction: column;
+  gap:35Px;
+
+}
+
+.hero img{
+  margin-top : 30px;
+  width: 300px;      /* set width */
+  height: 300px;     /* set height (same as width for perfect circle) */
+  border-radius: 50%; /* makes it round */
+  object-fit: cover;  
+}
+
+.hero h5{
+  text-align : center;
+  width :70%;
+  font-size: 50px;
+  font-weight:600;
+}
+
+.hero h5 span{
+  background : linear-gradient(270deg,#DF8908 10%,#B415FF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero p{
+  width:50%;
+  text-align : center;
+  font-size :24px;
+  line-height: 40px;
+}
+
+.hero-action{
+  display : flex;
+  align-items : center;
+  gap:25px;
+  font-size: 24px;
+  font-weight:500;
+  margin-bottom: 50px;
+
+}
+
+.hero-connect{
+    padding: 20px 30px;
+    border-radius: 50px;
+    background: linear-gradient(264deg, #DF8908 -5.09%, #B415FF 106.28%);
+    cursor: pointer;
+}
+
+.hero-resume {
+    padding: 20px 55px;
+    border-radius: 50px;
+    border: 2px solid #FFF;
+    cursor: pointer;
+}
+
+.hero-connect:hover{
+  border:2px solid white;
+}
+.hero-resume:hover{
+  border-color: #B415FF;
+}
+
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+  margin: 80px 170px;
+}
+.about-title{
+  position: relative;
+}
+
+.about title h1{
+  padding:0px 30px;
+  font-size: 80px;
+  font-weight: 600;
+}
+
+.about-title img{
+  position:absolute;
+  bottom: 0;
+  right:0;
+  z-index: -1;
+}
+.about-section{
+  display: flex;
+  flex-direction: row;
+  gap:80px;
+}
+
+.about-right{
+  display:flex;
+  flex-direction: column;
+  gap:80px;
+
+}
+.about-para{
+  display:flex;
+  flex-direction: column;
+  gap :20px;
+  font-size: 22px;
+  font-weight: 300;
+}
+.about-skills{
+  display: flex;
+  flex-direction: column;
+  gap : 20 px;
+
+}
+
+
+.about-achievements{
+  display:flex;
+  width:100%;
+  justify-content: space-around;
+  margin-bottom: 80px;
+}
+
+.about-achievement{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  gap:10px;
+  transition: 0.5s;
+}
+
+.about-achievement h1 {
+    font-size: 40px;
+    font-weight: 700;
+    background: linear-gradient(270deg, #DF8908 50.41%, #B415FF 90.25%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-achievement p {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.about-achievement:hover{
+  transform: scale(1.12);
+  transition: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
