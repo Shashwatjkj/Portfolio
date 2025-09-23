@@ -47,11 +47,11 @@ export  default function About(){
             </div> */}
             <AccordionDemo/>
             <div class="about-achievements">
-                <div class="about-achievement"><h1>10+</h1><p>YEARS OF EXPERIENCE</p></div>
+                <div class="about-achievement"><h1>1</h1><p>YEAR OF EXPERIENCE</p></div>
                 <hr/>
-                <div class="about-achievement"><h1>90+</h1><p>PROJECTS COMPLETED</p></div> 
+                <div class="about-achievement"><h1>7</h1><p>PROJECTS COMPLETED</p></div> 
                 <hr/>
-                <div class="about-achievement"><h1>15+</h1><p>HAPPY CLIENTS</p></div>
+                <div class="about-achievement"><h1>1</h1><p>Learning New Things</p></div>
             </div>
         
 

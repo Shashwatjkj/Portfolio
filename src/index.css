@@ -194,7 +194,7 @@ html, body, #root {
 .main-img{
   margin-top : 20px;
   width: 320px;      /* set width */
-  height: 320px;     /* set height (same as width for perfect circle) */
+  height: 380px;     /* set height (same as width for perfect circle) */
   /* makes it round */
   object-fit: cover;  
 }
