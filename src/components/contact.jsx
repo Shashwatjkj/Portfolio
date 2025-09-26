@@ -11,7 +11,7 @@ export  default function Contact(){
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_xiat2mv', 'template_zb5hcbm', form.current, 'Cg9XBlXwxRPTLxhdt')
+    emailjs.sendForm('service_xiat2mv', 'template_zb5hcbm', form.current, 'Zmw_EZuHcsFJGKJvP')
       .then((result) => {
         window.location.reload();
         alert("Mail sent successfully!");
